@@ -1,3 +1,4 @@
 class Monster < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :room
+  belongs_to :house through: :room
 end

@@ -1,3 +1,5 @@
 class House < ActiveRecord::Base
-  # Remember to create a migration!
+  has_many :rooms
+  has_many :monsters, through: :rooms
+  has_many :heroes
 end
